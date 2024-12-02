@@ -24,6 +24,7 @@ class IdImageService extends BaseService
     {
         return [
             'national_id' => $data['national_id'],
+            'birthday'    => $data['birthday'],
             'image'       => $response['image']
         ];
     }
