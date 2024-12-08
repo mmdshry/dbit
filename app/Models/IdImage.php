@@ -9,4 +9,11 @@ class IdImage extends ServiceModel
     use HasUuids;
 
     protected $guarded = [];
+
+    protected function casts(): array
+    {
+        return [
+            'image' => 'encrypted'
+        ];
+    }
 }

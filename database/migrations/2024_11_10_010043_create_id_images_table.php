@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('id_images', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->string('national_id')->unique();
-            $table->string('birthday')->unique();
+            $table->string('national_id')->index();
+            $table->string('birthday')->index();
             $table->longText('image');
             $table->timestamps();
         });
